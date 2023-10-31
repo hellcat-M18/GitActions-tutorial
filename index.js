@@ -7,6 +7,4 @@ app.get('/', (req, res) => {
   res.send("Wheeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee!!!")
 })
 
-if (process.env.NODE_ENV === `develop`) app.listen(port)
-
 exports.handler = serverlessExpress({ app })
